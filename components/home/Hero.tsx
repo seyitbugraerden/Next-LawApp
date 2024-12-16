@@ -1,9 +1,9 @@
-import React from "react";
+"use client";
 import Container from "../ui/Container";
 import Link from "next/link";
 import Image from "next/image";
-
-export default function Hero() {
+import { motion } from "framer-motion";
+export const Hero = () => {
   return (
     <Container className="flex flex-row items-center gap-4 py-4 h-[900px]">
       <div className="flex-1 flex flex-col gap-8">
@@ -38,4 +38,4 @@ export default function Hero() {
       </div>
     </Container>
   );
-}
+};

@@ -5,5 +5,5 @@
 
 * {
   font-family: "Mulish", sans-serif;
-  @apply transition duration-300 bg-primary
+  @apply bg-primary
 }
