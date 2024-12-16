@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link
               key={idx}
               href="/"
-              className="border-b-4 border-b-transparent hover:border-b-secondary hover:text-secondary py-8 px-4 text-white"
+              className="border-b-4 border-b-transparent hover:border-b-secondary hover:text-secondary py-8 px-4 text-white text-md font-medium uppercase"
             >
               {x}
             </Link>
