@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 export const Hero = () => {
   return (
-    <Container className="flex flex-row items-center gap-4 py-4 h-[900px]">
+    <Container className="flex flex-row items-center gap-4 py-4 h-[900px] pt-24">
       <div className="flex-1 flex flex-col gap-8">
         <h2 className="text-3xl text-secondary font-semibold">
           Best Lawer Egency

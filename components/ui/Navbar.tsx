@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import Container from "./Container";
 import Image from "next/image";
+import Container from "./Container";
 
 export default function Navbar() {
   const NavData = ["Home", "Pages", "Practice"];
   return (
-    <header className="sticky">
+    <header className="fixed w-full">
       <Container className="flex justify-between items-center">
         <div>
           <Image src="/logo.svg" alt="Logo" height={130} width={130} />
