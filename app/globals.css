@@ -5,7 +5,18 @@
 
 * {
   font-family: "Mulish", sans-serif;
+  
 }
-body {
-  @apply bg-primary;
+body{
+  @apply bg-primary min-w-[100dvh]
 }
+
+/* Scroll için ideal CSS */
+/* html {
+  scroll-snap-type: y mandatory; 
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+} */
