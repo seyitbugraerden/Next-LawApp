@@ -1,5 +1,5 @@
-import { Count } from "@/components/home/Count";
 import { Hero } from "@/components/home/Hero";
+import { BlogTriple } from "@/components/home/blog-triple";
 import { ContactForm } from "@/components/home/contact-form";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <ContactForm />
-      <Count />
+      <BlogTriple />
     </>
   );
 }

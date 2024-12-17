@@ -62,19 +62,19 @@ export const ContactForm = () => {
             type="text"
             placeholder="Your Name*"
             required
-            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white"
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
           />
           <input
             type="email"
             placeholder="Your Email*"
             required
-            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white"
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
           />
           <input
             type="tel"
             placeholder="Phone*"
             required
-            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white"
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
           />
           <select className="border border-white bg-transparent focus:outline-none focus:border-white p-3 text-white">
             <option value="Subject*">Subject*</option>
@@ -82,7 +82,7 @@ export const ContactForm = () => {
           <textarea
             rows={5}
             placeholder="Case Description"
-            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white"
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
           />
           <div className="bg-transparent flex justify-center mt-auto">
             <Link
