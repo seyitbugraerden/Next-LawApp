@@ -1,22 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Mulish", sans-serif;
-  
-}
-body{
-  @apply bg-primary min-w-[100dvh]
+body {
+  @apply bg-primary min-w-[100dvh];
 }
 
-/* Scroll için ideal CSS */
-/* html {
-  scroll-snap-type: y mandatory; 
-  scroll-behavior: smooth;
+.img__hero::before {
+  position: absolute;
+  content: "";
+  display: block;
+  right: 0;
+  top: 0;
+  @apply border-[7px] border-secondary h-full w-[80%] -z-10;
 }
-section {
-  height: 100vh;
-  scroll-snap-align: center;
-} */

@@ -1,0 +1,4 @@
+const duyurular = {
+    title :" ",
+    desc:""
+}

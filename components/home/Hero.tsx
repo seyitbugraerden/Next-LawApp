@@ -2,11 +2,10 @@
 import Container from "../ui/Container";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section>
-      <Container className="flex flex-row items-center gap-4 py-4 h-[900px] pt-24">
+      <Container className="flex flex-row items-center gap-4 py-4">
         <div className="flex-1 flex flex-col gap-8">
           <h2 className="text-3xl text-secondary font-semibold">
             Best Lawer Egency
@@ -28,14 +27,15 @@ export const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 relative overflow-hidden">
           <Image
             src="https://wpocean.com/html/tf/avukat/assets/images/slider/1.png"
             alt="Hero Image"
-            width={600}
+            width={550}
             height={220}
             className="ml-auto"
           />
+          <div className="img__hero"></div>
         </div>
       </Container>
     </section>
