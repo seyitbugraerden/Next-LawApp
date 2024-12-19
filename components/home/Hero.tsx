@@ -5,9 +5,9 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <section>
-      <Container className="flex flex-row items-center gap-4 py-4">
+      <Container className="flex flex-row items-center gap-4 py-4 min-h-[90dvh]">
         <div className="flex-1 flex flex-col gap-8">
-          <h2 className="text-3xl text-secondary font-semibold">
+          <h2 className="text-4xl text-secondary font-semibold">
             Best Lawer Egency
           </h2>
           <h1 className="text-[60px] text-white leading-[60px]">

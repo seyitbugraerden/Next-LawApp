@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  font-family: 'Courier New', Courier, monospace;
   @apply bg-primary min-w-[100dvh];
 }
 
