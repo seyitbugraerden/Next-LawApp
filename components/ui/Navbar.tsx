@@ -4,7 +4,7 @@ import Image from "next/image";
 import Container from "./Container";
 
 export default function Navbar() {
-  const NavData = ["Home", "Pages", "Practice"];
+  const NavData = ["Home", "About"];
   return (
     <header className="w-full bg-primary z-[999999999]">
       <Container className="flex justify-between items-center">
@@ -15,7 +15,7 @@ export default function Navbar() {
           {NavData.map((x, idx) => (
             <Link
               key={idx}
-              href="/"
+              href={x === "About" ? "/about" : "/"}
               className="border-b-4 border-b-transparent hover:border-b-secondary hover:text-secondary py-8 px-4 text-white text-md font-medium uppercase"
             >
               {x}
