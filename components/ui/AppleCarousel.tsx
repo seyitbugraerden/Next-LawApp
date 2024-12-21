@@ -8,14 +8,16 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <section className="w-full h-full py-20 bg-tertiary max-h-[100dvh]">
-      <Container>
-        <div className="flex flex-col gap-2 border-l-2 border-secondary ps-4">
-          <h2 className="text-xl text-secondary">Services</h2>
-          <h1 className="text-4xl text-white">Services</h1>
-        </div>
-      </Container>
-      <Carousel items={cards} />
+    <section>
+      <div className="w-full py-20 bg-tertiary h-dvh max-h-dvh overflow-hidden">
+        <Container className="translate-y-16">
+          <div className="flex flex-col gap-2 border-l-2 border-secondary ps-4">
+            <h2 className="text-xl text-secondary">Services</h2>
+            <h1 className="text-4xl text-white">Services</h1>
+          </div>
+        </Container>
+        <Carousel items={cards} />
+      </div>
     </section>
   );
 }

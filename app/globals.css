@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #4caf50 #f1f1f1;
   @apply bg-primary min-w-[100dvh];
 }
 
@@ -13,5 +14,35 @@ body {
   display: block;
   right: 0;
   top: 0;
-  @apply border-[7px] border-secondary h-full w-[80%] -z-10;
+  @apply border-[20px] border-[#717171] h-full w-[75%] -z-10;
+}
+.img__hero::after {
+  position: absolute;
+  content: "";
+  display: block;
+  @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10;
+}
+section{
+  scroll-snap-align: center;
+  @apply h-dvh overflow-x-hidden flex justify-center items-center
+}
+html {
+  scroll-snap-type: y mandatory; 
+  scroll-behavior: smooth;
+}/* Webkit (Chrome, Safari, Edge) için scroll tasarımı */
+body::-webkit-scrollbar {
+  width: 10px; /* Scroll genişliği */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scroll arka plan rengi */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4caf50; /* Scroll tutamacı rengi */
+  border-radius: 5px; /* Tutamacın köşeleri */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #388e3c; /* Scroll tutamacı üzerine gelince renk */
 }

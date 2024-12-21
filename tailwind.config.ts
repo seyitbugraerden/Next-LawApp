@@ -12,6 +12,7 @@ export default {
         primary: "#1E2E3E",
         secondary: "#AD9071",
         tertiary: "#172533",
+        quat: "#26394c",
       },
     },
   },

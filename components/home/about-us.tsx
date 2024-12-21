@@ -1,7 +1,5 @@
-import React from "react";
 import Container from "../ui/Container";
 import Image from "next/image";
-import CountUp from "react-countup";
 
 export const AboutUs = () => {
   return (
@@ -20,14 +18,14 @@ export const AboutUs = () => {
               alt="left pic"
               width={640}
               height={120}
-              className="w-full h-[650px] object-cover"
+              className="aspect-square w-[80%]"
             />
             <Image
               src="https://picsum.photos/640/640"
               alt="left pic"
               width={640}
               height={120}
-              className="w-[350px] h-[450px] object-cover absolute -right-16 top-[20%] origin-center shadow-2xl"
+              className="aspect-square absolute right-0 top-1/2 -translate-y-1/2 w-1/2 shadow-2xl"
             />
           </div>
           <div className="flex-1 flex flex-col gap-6">
@@ -49,20 +47,6 @@ export const AboutUs = () => {
               at id massa id elementum feugiat molestie. Adipiscing turpis
               feugiat lectus posuere nulla ultrices vitae.
             </p>
-            <div className="grid grid-cols-2 place-items-center text-3xl font-semibold gap-y-4">
-              <div>
-                <CountUp end={92} enableScrollSpy={true} />%
-              </div>
-              <div>
-                <CountUp end={92} enableScrollSpy={true} />%
-              </div>{" "}
-              <div>
-                <CountUp end={92} enableScrollSpy={true} />%
-              </div>{" "}
-              <div>
-                <CountUp end={92} enableScrollSpy={true} />%
-              </div>
-            </div>
           </div>
         </div>
       </Container>

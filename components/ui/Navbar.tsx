@@ -6,7 +6,7 @@ import Container from "./Container";
 export default function Navbar() {
   const NavData = ["Home", "About"];
   return (
-    <header className="w-full bg-primary z-[999999999]">
+    <header className="w-full bg-primary z-[999999999] sticky top-0">
       <Container className="flex justify-between items-center">
         <div>
           <Image src="/logo.svg" alt="Logo" height={130} width={130} />

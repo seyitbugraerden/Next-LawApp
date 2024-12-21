@@ -36,6 +36,12 @@ export const Hero = () => {
             className="ml-auto"
           />
           <div className="img__hero"></div>
+          <div className="absolute left-12 bottom-12 flex flex-row items-center gap-4">
+            <h2 className="text-[120px] text-secondary font-semibold">25</h2>
+            <h5 className="text-3xl text-white">
+              Years of <br /> Experience
+            </h5>
+          </div>
         </div>
       </Container>
     </section>
