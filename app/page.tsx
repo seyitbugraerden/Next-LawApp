@@ -1,11 +1,9 @@
-"use client";
 import { Hero } from "@/components/home/Hero";
 import { AboutUs } from "@/components/home/AboutUs";
 import { BlogTriple } from "@/components/home/BlogTriple";
 import { ContactForm } from "@/components/home/ContactForm";
 import { LogoCloud } from "@/components/home/LogoCloud";
 import { SwiperSection } from "@/components/home/SwiperSection";
-import SwiperDemo from "@/components/ui/SwiperDemo";
 
 export default function Home() {
   return (
@@ -14,7 +12,6 @@ export default function Home() {
       <AboutUs />
       <LogoCloud />
       <SwiperSection />
-      
       <BlogTriple />
       <ContactForm />
     </>

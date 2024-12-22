@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-tertiary ">
+    <footer className="bg-primary ">
       <Container className="grid grid-cols-4 py-12">
         <div>
           <Image src="/logo.svg" alt="logo" width={240} height={60} />
