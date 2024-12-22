@@ -13,6 +13,7 @@ export default {
         secondary: "#AD9071",
         tertiary: "#172533",
         quat: "#26394c",
+        qiat: "#405D79",
       },
     },
   },
