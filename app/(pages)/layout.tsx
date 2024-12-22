@@ -1,4 +1,4 @@
-import { Breadbcrumb } from "@/components/pages/breadcrumb";
+import { Breadbcrumb } from "@/components/pages/Breadcrumb";
 import React from "react";
 
 const layout = () => {
