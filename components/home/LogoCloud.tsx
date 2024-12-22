@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 export const LogoCloud = () => {
   return (
-    <section className="bg-primary py-20 border-t border-b border-gray-800">
+    <div className="bg-primary py-20 border-t border-b border-gray-800">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap -mx-3">
           <div className="w-full lg:w-1/2 px-3">
@@ -70,6 +70,6 @@ export const LogoCloud = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

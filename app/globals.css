@@ -23,26 +23,5 @@ body {
   @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10;
 }
 section{
-  scroll-snap-align: center;
   @apply h-dvh overflow-x-hidden flex justify-center items-center
-}
-html {
-  scroll-snap-type: y mandatory; 
-  scroll-behavior: smooth;
-}/* Webkit (Chrome, Safari, Edge) için scroll tasarımı */
-body::-webkit-scrollbar {
-  width: 10px; /* Scroll genişliği */
-}
-
-body::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Scroll arka plan rengi */
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #4caf50; /* Scroll tutamacı rengi */
-  border-radius: 5px; /* Tutamacın köşeleri */
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: #388e3c; /* Scroll tutamacı üzerine gelince renk */
 }
