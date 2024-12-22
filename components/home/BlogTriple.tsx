@@ -24,7 +24,7 @@ export const BlogTriple = () => {
             <Link
               href="#"
               key={index}
-              className="bg-white rounded-2xl shadow-2xl hover:bg-secondary transition duration-300 group-hover:blur-sm hover:!blur-0"
+              className="bg-white rounded-2xl shadow-2xl transition duration-300 group-hover:blur-sm hover:!blur-0 relative"
             >
               <Image
                 src="https://picsum.photos/480/300"
@@ -33,8 +33,9 @@ export const BlogTriple = () => {
                 height={300}
                 className="rounded-t-2xl"
               />
+              <div className="bg-secondary px-3 py-1 absolute right-0 top-1/2 translate-y-2 text-white text-sm hidden group-hover:block">12.07.1997</div>
               <div className="pb-8 px-5 pt-0 ">
-                <h2 className="mt-4 text-2xl font-semibold line-clamp-1">
+                <h2 className="mt-4 text-2xl font-semibold line-clamp-1 group-hover:text-secondary" title="Lorem ipsum dolor sit amet elit.">
                   Lorem ipsum dolor sit amet elit.
                 </h2>
                 <p className="font-thin mt-4 line-clamp-3 h-18">

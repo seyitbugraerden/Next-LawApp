@@ -24,17 +24,20 @@ export default function SwiperDemo() {
         {Array.from({ length: 5 }).map((_, index) => (
           <SwiperSlide key={index} className="relative">
             <Link href="#">
-              <div className="absolute left-6 top-6 z-50">
+              <div className="absolute right-6 bottom-12 z-50">
                 <h2 className="text-3xl font-semibold text-white">
                   Hukuki Danışmanlık
                 </h2>
+              </div>
+              <div className="absolute right-6 bottom-6 z-50 text-secondary">
+                Lorem ipsum dolor
               </div>
               <Image
                 src="https://picsum.photos/640/640"
                 alt={`Slide ${index + 1}`}
                 width={640}
                 height={420}
-                className="h-[650px] rounded-2xl brightness-50 hover:brightness-[20%] transition duration-300"
+                className="h-[550px] rounded-2xl brightness-50 hover:brightness-[20%] transition duration-300"
               />
             </Link>
           </SwiperSlide>

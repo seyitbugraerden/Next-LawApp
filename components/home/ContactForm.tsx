@@ -55,7 +55,7 @@ export const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-6 p-24 bg-secondary">
+        <div className="flex-1 flex flex-col gap-6 p-24 bg-secondary shadow-2xl shadow-black/70">
           <h2 className="text-white text-4xl bg-transparent">Contact Us</h2>
           <div className="w-full h-[1px] bg-primary"></div>
           <input

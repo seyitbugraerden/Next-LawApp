@@ -25,3 +25,9 @@ body {
 section{
   @apply h-dvh overflow-x-hidden flex justify-center items-center
 }
+.bg-try{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/1920/1920");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
