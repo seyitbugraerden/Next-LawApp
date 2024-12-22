@@ -13,7 +13,7 @@ export default function SwiperDemo() {
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={3}
         spaceBetween={30}
         loop={true}
         pagination={{

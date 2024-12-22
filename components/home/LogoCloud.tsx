@@ -8,11 +8,6 @@ export const LogoCloud = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap -mx-3">
           <div className="w-full lg:w-1/2 px-3">
-            <div className="inline-block mb-6 border border-gray-800 rounded-full">
-              <div className="text-blue-500 bg-gray-900 px-6 py-3 rounded-full">
-                Trusted by great companies
-              </div>
-            </div>
             <h2 className="text-white text-opacity-50 text-4xl font-light mb-4">
               We always evaluate our skills
             </h2>
@@ -34,7 +29,7 @@ export const LogoCloud = () => {
                   </span>
                   k
                 </span>
-                <p className="text-white">New accounts</p>
+                <p className="text-white font-light">New accounts</p>
               </div>
 
               <div className="text-center">
@@ -44,7 +39,7 @@ export const LogoCloud = () => {
                     <CountUp end={92} enableScrollSpy={true} />
                   </span>
                 </span>
-                <p className="text-white">Finished projects</p>
+                <p className="text-white font-light">Finished projects</p>
               </div>
 
               <div className="text-center">
@@ -54,7 +49,7 @@ export const LogoCloud = () => {
                     <CountUp end={756} enableScrollSpy={true} />
                   </span>
                 </span>
-                <p className="text-white">Skilled experts</p>
+                <p className="text-white font-light">Skilled experts</p>
               </div>
 
               <div className="text-center">
@@ -65,7 +60,7 @@ export const LogoCloud = () => {
                   </span>
                   k
                 </span>
-                <p className="text-white">Media posts</p>
+                <p className="text-white font-light">Media posts</p>
               </div>
             </div>
           </div>

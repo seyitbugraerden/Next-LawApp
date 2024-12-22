@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export const BlogTriple = () => {
   return (
-    <section>
-      <Container className="py-24">
+    <div>
+      <Container className="pb-24">
         <div className="flex flex-row justify-between items-end">
           <div className="flex flex-col gap-2 border-l-2 border-secondary ps-4">
             <h2 className="text-xl text-secondary">Blog</h2>
@@ -56,6 +56,6 @@ export const BlogTriple = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </div>
   );
 };

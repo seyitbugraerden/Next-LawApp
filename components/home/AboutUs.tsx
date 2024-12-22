@@ -32,7 +32,6 @@ export const AboutUs = () => {
             <h2 className="text-3xl font-bold">
               We Are The Most Populer Law Firm That Can Help You Perfectly!
             </h2>
-            <div className="w-full h-1 bg-secondary"></div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
               tincidunt nullam ridiculus at nec mattis consequat cursus et.
