@@ -1,5 +1,4 @@
 import { SwiperSection } from "@/components/home/SwiperSection";
-import Breadcrumb from "@/components/pages/Breadcrumb";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +6,6 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
-      <Breadcrumb />
       <Container className="text-white my-12">
         <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-black/70">
           <p className="text-white p-12">

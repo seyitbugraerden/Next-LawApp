@@ -1,4 +1,3 @@
-import Breadcrumb from "@/components/pages/Breadcrumb";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import { ServiceCard } from "@/components/pages/services/ServiceCard";
 import Container from "@/components/ui/Container";
@@ -7,7 +6,6 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <Breadcrumb />
       <Container className="pb-24">
         <PagesTitle
           title="How Can We Help You

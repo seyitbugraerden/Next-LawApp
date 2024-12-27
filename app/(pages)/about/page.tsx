@@ -1,11 +1,9 @@
-import Breadcrumb from "@/components/pages/Breadcrumb";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
 
 const page = () => {
   return (
     <>
-      <Breadcrumb />
       <Container className="text-white pb-24">
         <div className="flex flex-row gap-4 py-12">
           <div className="flex-1">
