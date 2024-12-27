@@ -23,7 +23,7 @@ body {
   @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10 ;
 }
 section{
-  @apply min-h-dvh max-w-[85vw] mx-auto overflow-x-hidden flex justify-center items-center
+  @apply min-h-dvh  overflow-x-hidden flex justify-center items-center
 }
 .bg-try{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/1920/1920");
