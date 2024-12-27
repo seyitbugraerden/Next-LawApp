@@ -13,11 +13,11 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <footer className="bg-primary ">
-      <Container className="grid grid-cols-4 py-12">
+      <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
         <div>
           <Image src="/logo.svg" alt="logo" width={240} height={60} />
         </div>
-        <div className="mx-auto">
+        <div className="lg:mx-auto">
           <h2 className="text-2xl text-white font-semibold">Quick Links</h2>
           <ul className="text-white list-disc ms-4 mt-4">
             <li>Lorem, ipsum.</li>
@@ -27,7 +27,7 @@ export const Footer = () => {
             <li>Lorem, ipsum.</li>
           </ul>
         </div>
-        <div className="mx-auto">
+        <div className="lg:mx-auto">
           <h2 className="text-2xl text-white font-semibold">Quick Links</h2>
           <ul className="text-white list-disc ms-4 mt-4">
             <li>Lorem, ipsum.</li>
@@ -51,7 +51,7 @@ export const Footer = () => {
           </div>
         </div>
       </Container>
-      <Container className="flex justify-between items-center py-6 border-t border-white/70">
+      <Container className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center py-6 border-t border-white/70">
         <div className="text-sm text-white/70 font-light">
           <p>Copyright © 2024 Avukat. All rights reserved.</p>
         </div>
