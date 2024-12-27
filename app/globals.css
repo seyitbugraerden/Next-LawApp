@@ -14,16 +14,16 @@ body {
   display: block;
   right: 0;
   top: 0;
-  @apply border-[20px] border-[#717171] h-full w-full lg:w-[80%] xl:w-[75%] -z-10;
+  @apply border-[20px] border-[#717171] h-full w-full lg:w-[80%] xl:w-[75%] -z-10 ;
 }
 .img__hero::after {
   position: absolute;
   content: "";
   display: block;
-  @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10;
+  @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10 ;
 }
 section{
-  @apply h-dvh overflow-x-hidden flex justify-center items-center
+  @apply min-h-dvh max-w-[85vw] mx-auto overflow-x-hidden flex justify-center items-center
 }
 .bg-try{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/1920/1920");
