@@ -6,7 +6,6 @@ import {
   FaInstagram,
   FaLinkedin,
   FaTelegram,
-  FaTwitter,
 } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import Link from "next/link";

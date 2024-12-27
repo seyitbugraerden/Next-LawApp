@@ -20,7 +20,7 @@ export const BlogTriple = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 ">
-          {Array.from({ length: 3 }).map((_, index) => (
+          {Array.from({ length: 3 }).map((_, index: number) => (
             <Link
               href="#"
               key={index}

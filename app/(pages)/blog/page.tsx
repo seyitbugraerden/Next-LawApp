@@ -4,6 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+interface BlogPost {
+  id: number;
+  title: string;
+  content: string;
+  date: string;
+  imageUrl: string;
+}
+
+const blogPosts: BlogPost[] = Array.from({ length: 12 }).map((_, index) => ({
+  id: index,
+  title: "Lorem ipsum dolor sit amet elit.",
+  content:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, tempora est suscipit accusamus autem, nam accusantium temporibus libero, officia aliquid quibusdam soluta necessitatibus facere. Accusamus debitis tempora repudiandae dolores porro at quaerat sapiente excepturi molestias atque!",
+  date: "12.07.1997",
+  imageUrl: "https://picsum.photos/480/300",
+}));
+
 const page = () => {
   return (
     <div>
@@ -21,35 +38,31 @@ const page = () => {
       </Container>
       <Container>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 ">
-          {Array.from({ length: 12 }).map((_, index) => (
+          {blogPosts.map((post) => (
             <Link
               href="#"
-              key={index}
+              key={post.id}
               className="bg-white rounded-2xl shadow-2xl transition duration-300 relative group"
             >
               <Image
-                src="https://picsum.photos/480/300"
-                alt="Blog Pic"
+                src={post.imageUrl}
+                alt={`${post.title} thumbnail`}
                 width={480}
                 height={300}
-                className="rounded-t-2xl"
+                className="rounded-t-2xl h-[270px] object-cover"
               />
               <div className="bg-secondary px-3 py-1 absolute right-0 top-1/2 translate-y-2 text-white text-sm opacity-0 pointer-events-none group-hover:opacity-100 hover:pointer-events-auto transition duration-500">
-                12.07.1997
+                {post.date}
               </div>
-              <div className="pb-8 px-5 pt-0 ">
+              <div className="pb-8 px-5 pt-0">
                 <h2
                   className="mt-4 text-2xl font-semibold line-clamp-1 group-hover:text-secondary"
-                  title="Lorem ipsum dolor sit amet elit."
+                  title={post.title}
                 >
-                  Lorem ipsum dolor sit amet elit.
+                  {post.title}
                 </h2>
                 <p className="font-thin mt-4 line-clamp-3 h-18">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Iure, tempora est suscipit accusamus autem, nam accusantium
-                  temporibus libero, officia aliquid quibusdam soluta
-                  necessitatibus facere. Accusamus debitis tempora repudiandae
-                  dolores porro at quaerat sapiente excepturi molestias atque!
+                  {post.content}
                 </p>
                 <div className="mt-6 flex flex-row items-center gap-2">
                   <div className="h-[1px] w-6 bg-secondary"></div>
