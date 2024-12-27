@@ -6,14 +6,12 @@ const Breadcrumb = () => {
   const pathname = usePathname();
   if (!pathname) return null;
 
-  // Split and filter path segments
   const segments = pathname.split("/").filter(Boolean);
 
   return (
     <div className="w-full h-[400px] bg-black/30">
       <div className="max-w-7xl mx-auto h-full">
         <div className="flex flex-col justify-center items-start h-full">
-          {/* Page Title */}
           <h1 className="text-6xl text-white">
             {segments.length > 0
               ? segments[segments.length - 1].charAt(0).toUpperCase() +
@@ -21,7 +19,6 @@ const Breadcrumb = () => {
               : "Home"}
           </h1>
 
-          {/* Breadcrumb Navigation */}
           <div className="flex flex-row items-center text-2xl gap-2 mt-3 text-secondary">
             <Link
               href="/"
