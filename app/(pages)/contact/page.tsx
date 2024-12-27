@@ -1,10 +1,12 @@
 import { ContactForm } from "@/components/home/ContactForm";
+import { Breadbcrumb } from "@/components/pages/Breadcrumb";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
 
 const page = () => {
   return (
     <>
+    <Breadbcrumb/>
       <Container>
         <PagesTitle
           title="How Can We Help You

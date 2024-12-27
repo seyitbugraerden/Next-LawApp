@@ -1,3 +1,4 @@
+import { Breadbcrumb } from "@/components/pages/Breadcrumb";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
@@ -24,7 +25,7 @@ const blogPosts: BlogPost[] = Array.from({ length: 12 }).map((_, index) => ({
 const page = () => {
   return (
     <div>
-      {" "}
+      <Breadbcrumb/>
       <PagesTitle
         title="How Can We Help You
         "
