@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export const ContactForm = () => {
   return (
-    <section className="py-24  bg-tertiary overflow-y-hidden">
-      <Container className="flex px-24 bg-transparent">
-        <div className="flex-1 flex flex-col gap-6 p-24">
+    <section className="py-24 bg-tertiary overflow-y-hidden">
+      <Container className="flex flex-col lg:flex-row lg:px-24 bg-transparent">
+        <div className="flex-1 flex flex-col gap-6 p-12 lg:p-24">
           <h2 className="text-white text-4xl bg-transparent">Contact Info</h2>
           <div className="w-full h-[1px] bg-secondary"></div>
           <p className="text-white text-lg bg-transparent">
@@ -55,7 +55,7 @@ export const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-6 p-24 bg-secondary shadow-2xl shadow-black/70">
+        <div className="flex-1 flex flex-col gap-6 p-12 lg:p-24 bg-secondary shadow-2xl shadow-black/70">
           <h2 className="text-white text-4xl bg-transparent">Contact Us</h2>
           <div className="w-full h-[1px] bg-primary"></div>
           <input
@@ -93,7 +93,7 @@ export const ContactForm = () => {
             </Link>
           </div>
         </div>
-      </Container>{" "}
+      </Container>
     </section>
   );
 };

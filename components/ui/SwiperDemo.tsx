@@ -20,7 +20,7 @@ export default function SwiperDemo() {
           640: {
             slidesPerView: 1,
           },
-          976: {
+          768: {
             slidesPerView: 2,
           },
           1280: {
@@ -29,7 +29,7 @@ export default function SwiperDemo() {
         }}
       >
         {Array.from({ length: 5 }).map((_, index) => (
-          <SwiperSlide key={index} className="relative p-12">
+          <SwiperSlide key={index} className="relative p-4">
             <Link href="#">
               <div className="relative">
                 <Image
@@ -43,7 +43,7 @@ export default function SwiperDemo() {
                   Lorem ipsum dolor
                 </div>
                 <div className="absolute right-6 bottom-12 z-50">
-                  <h2 className="text-3xl font-semibold text-white">
+                  <h2 className="text-3xl font-semibold text-white text-right">
                     Hukuki Danışmanlık
                   </h2>
                 </div>

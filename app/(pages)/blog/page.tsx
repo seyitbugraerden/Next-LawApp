@@ -48,7 +48,7 @@ const page = () => {
                 alt={`${post.title} thumbnail`}
                 width={480}
                 height={300}
-                className="rounded-t-2xl h-[270px] object-cover"
+                className="rounded-t-2xl h-[270px] object-cover w-full"
               />
               <div className="bg-secondary px-3 py-1 absolute right-0 top-1/2 translate-y-2 text-white text-sm opacity-0 pointer-events-none group-hover:opacity-100 hover:pointer-events-auto transition duration-500">
                 {post.date}

@@ -19,7 +19,7 @@ export const BlogTriple = () => {
             </Link>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-12 p-4 gap-y-24 gap-x-24 lg:gap-12">
           {Array.from({ length: 3 }).map((_, index: number) => (
             <Link
               href="#"
@@ -31,7 +31,7 @@ export const BlogTriple = () => {
                 alt="Blog Pic"
                 width={480}
                 height={300}
-                className="rounded-t-2xl"
+                className="rounded-t-2xl h-[270px] w-full object-cover"
               />
               <div className="bg-secondary px-3 py-1 absolute right-0 top-1/2 translate-y-2 text-white text-sm opacity-0 pointer-events-none group-hover:opacity-100 hover:pointer-events-auto transition duration-500">
                 12.07.1997

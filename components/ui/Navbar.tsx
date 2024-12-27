@@ -18,7 +18,7 @@ export default function Navbar() {
         <div>
           <Image src="/logo.svg" alt="Logo" height={130} width={130} />
         </div>
-        <div className="py-8">
+        <div className="py-8 hidden lg:block">
           {NavData.map((x, idx) => (
             <Link
               key={idx}

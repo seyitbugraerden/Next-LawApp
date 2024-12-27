@@ -7,7 +7,7 @@ export default function Container({
 }) {
   return (
     <div
-      className={`lg:max-w-[1360px] max-w-[95vw] mx-auto ${className || ""}`}
+      className={`xl:max-w-[1360px] max-w-[85vw] mx-auto ${className || ""}`}
     >
       {children}
     </div>

@@ -5,7 +5,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;scrollbar-width: thin; /* Firefox */
   scrollbar-color: black #f1f1f1;
-  @apply bg-primary min-w-[100dvh];
+  @apply bg-primary
 }
 
 .img__hero::before {
@@ -23,7 +23,7 @@ body {
   @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10 ;
 }
 section{
-  @apply min-h-dvh  overflow-x-hidden flex justify-center items-center
+  @apply min-h-dvh overflow-x-hidden flex justify-center items-center
 }
 .bg-try{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/1920/1920");
