@@ -16,10 +16,7 @@ export default function SwiperDemo() {
         slidesPerView={3}
         spaceBetween={30}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        className="mySwiper"
+        className="mySwiper overflow-visible"
       >
         {Array.from({ length: 5 }).map((_, index) => (
           <SwiperSlide key={index} className="relative">

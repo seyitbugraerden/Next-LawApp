@@ -5,10 +5,11 @@ import Container from "./Container";
 
 export default function Navbar() {
   const NavData = [
-    { title: "Home", link: "/home" },
+    { title: "Home", link: "/" },
     { title: "About", link: "/about" },
     { title: "Services", link: "/services" },
     { title: "Contact", link: "/contact" },
+    { title: "Blog", link: "/blog" },
   ];
 
   return (

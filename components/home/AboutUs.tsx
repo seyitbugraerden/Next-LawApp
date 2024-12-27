@@ -18,7 +18,7 @@ export const AboutUs = () => {
               alt="left pic"
               width={640}
               height={120}
-              className="aspect-square w-[80%]"
+              className="aspect-square w-[80%] !h-[70dvh]"
             />
             <Image
               src="https://picsum.photos/640/640"
