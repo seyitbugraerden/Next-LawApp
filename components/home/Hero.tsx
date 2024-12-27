@@ -4,9 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 export const Hero = () => {
   return (
-    <section>
-      <Container className="flex flex-row items-center gap-4 py-4 min-h-[90dvh]">
-        <div className="flex-1 flex flex-col gap-8">
+    <section className="h-full">
+      <Container className="flex flex-col lg:flex-row items-center gap-4 py-4 lg:min-h-[90dvh] lg:mt-0">
+        <div className="flex-1 flex flex-col gap-8 order-2 lg:order-1 text-center lg:text-left mt-24 lg:mt-0">
           <h2 className="text-4xl text-secondary font-semibold">
             Best Lawer Egency
           </h2>
@@ -27,7 +27,7 @@ export const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-1 relative overflow-hidden">
+        <div className="flex-1 relative overflow-hidden order-1 lg:order-2">  
           <Image
             src="https://wpocean.com/html/tf/avukat/assets/images/slider/1.png"
             alt="Hero Image"

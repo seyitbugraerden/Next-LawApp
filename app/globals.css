@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #4caf50 #f1f1f1;
+  scrollbar-color: black #f1f1f1;
   @apply bg-primary min-w-[100dvh];
 }
 
@@ -14,7 +14,7 @@ body {
   display: block;
   right: 0;
   top: 0;
-  @apply border-[20px] border-[#717171] h-full w-[75%] -z-10;
+  @apply border-[20px] border-[#717171] h-full w-full lg:w-[80%] xl:w-[75%] -z-10;
 }
 .img__hero::after {
   position: absolute;
