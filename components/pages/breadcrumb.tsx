@@ -2,13 +2,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const Breadbcrumb = () => {
+const Breadcrumb = () => {
   const router = usePathname();
   if (!router) return null;
-  
+
   const routeEl = router.split("/");
-  const formattedSegment = routeEl[routeEl.length - 1] 
-    ? routeEl[routeEl.length - 1].charAt(0).toUpperCase() + 
+  const formattedSegment = routeEl[routeEl.length - 1]
+    ? routeEl[routeEl.length - 1].charAt(0).toUpperCase() +
       routeEl[routeEl.length - 1].slice(1)
     : "";
 
@@ -47,3 +47,5 @@ export const Breadbcrumb = () => {
     </div>
   );
 };
+
+export default Breadcrumb;
