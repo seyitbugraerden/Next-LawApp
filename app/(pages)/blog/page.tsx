@@ -1,26 +1,27 @@
-import Link from "next/link";
-import Container from "../ui/Container";
-import { MdArrowRightAlt } from "react-icons/md";
+import { PagesTitle } from "@/components/pages/PagesTitle";
+import Container from "@/components/ui/Container";
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-export const BlogTriple = () => {
+const page = () => {
   return (
     <div>
-      <Container className="pb-24">
-        <div className="flex flex-row justify-between items-end">
-          <div className="flex flex-col gap-2 border-l-2 border-secondary ps-4">
-            <h2 className="text-xl text-secondary">Blog</h2>
-            <h1 className="text-4xl text-white">Latest New Update</h1>
-          </div>
-          <div>
-            <Link href="/" className="text-secondary hover:opacity-80">
-              Blog Sayfası
-              <MdArrowRightAlt className="inline-block size-6 ms-1" />
-            </Link>
-          </div>
-        </div>
+      {" "}
+      <PagesTitle
+        title="How Can We Help You
+        "
+        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+        "
+      />
+      <Container className="text-white pb-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid atque
+        blanditiis eaque recusandae esse libero amet quasi aliquam, asperiores
+        error modi qui dicta distinctio laudantium.
+      </Container>
+      <Container>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 ">
-          {Array.from({ length: 3 }).map((_, index) => (
+          {Array.from({ length: 12 }).map((_, index) => (
             <Link
               href="#"
               key={index}
@@ -64,3 +65,5 @@ export const BlogTriple = () => {
     </div>
   );
 };
+
+export default page;
