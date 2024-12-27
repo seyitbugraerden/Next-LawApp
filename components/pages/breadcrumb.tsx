@@ -4,11 +4,13 @@ import { usePathname } from "next/navigation";
 
 export const Breadbcrumb = () => {
   const router = usePathname();
+  if (!router) return null;
+  
   const routeEl = router.split("/");
-  const formattedSegment =
-    routeEl[routeEl.length - 1].charAt(0).toUpperCase() +
-    routeEl[routeEl.length - 1].slice(1);
-  console.log(routeEl);
+  const formattedSegment = routeEl[routeEl.length - 1] 
+    ? routeEl[routeEl.length - 1].charAt(0).toUpperCase() + 
+      routeEl[routeEl.length - 1].slice(1)
+    : "";
 
   return (
     <div className="w-full h-[400px] bg-black/30">
@@ -23,16 +25,16 @@ export const Breadbcrumb = () => {
               Home
             </Link>
             {routeEl.map((x, idx) => {
-              if (idx !== 0) {
+              if (idx !== 0 && x) {
+                const formattedLink = x.charAt(0).toUpperCase() + x.slice(1);
                 return (
                   <div key={idx} className="flex flex-row items-center gap-2">
                     <span>-</span>
                     <Link
-                      href={x.toLowerCase()}
+                      href={`/${x.toLowerCase()}`}
                       className="hover:text-secondary/50 transition duration-300"
                     >
-                      {x.charAt(0).toUpperCase() +
-                        routeEl[routeEl.length - 1].slice(1)}
+                      {formattedLink}
                     </Link>
                   </div>
                 );
