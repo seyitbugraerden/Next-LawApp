@@ -1,19 +1,24 @@
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import { ServiceCard } from "@/components/pages/services/ServiceCard";
 import Container from "@/components/ui/Container";
+import { PageHeader } from "@/components/ui/PageHeader";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <Container className="pb-24">
+      <PageHeader
+        title="Hizmetlerimiz"
+        items={[{ title: "Hizmetlerimiz", link: "/hizmetlerimiz" }]}
+      />
+      <Container className="pb-12">
         <PagesTitle
           title="How Can We Help You
 "
           subTitle="Legal Practice Areas
 "
         />
-        <p className="mb-16 text-white">
+        <p className="mb-16 mt-6 text-white">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
           distinctio libero, laboriosam consectetur, corrupti mollitia ex
           eligendi non totam aliquid rerum sint ea culpa fugit quasi delectus,
@@ -26,7 +31,7 @@ const page = () => {
           vel amet explicabo deleniti molestias soluta id eum modi officiis odio
           laudantium aspernatur ad.
         </p>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {Array.from({ length: 6 }).map((_, index) => (
             <ServiceCard key={index} />
           ))}
