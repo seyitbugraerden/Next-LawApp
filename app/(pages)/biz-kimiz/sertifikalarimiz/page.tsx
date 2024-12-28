@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Container from "@/components/ui/Container";
-import Breadcrumb from "@/components/pages/BreadcrumbElement";
 import { useState } from "react";
 import { PagesTitle } from "@/components/pages/PagesTitle";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 const certificates = [
   {
@@ -39,7 +39,7 @@ const Page = () => {
 
   return (
     <>
-      <Breadcrumb
+      <PageHeader
         title="Sertifikalarımız"
         items={[
           { title: "Sertifikalarımız", link: "/biz-kimiz/sertifikalarimiz" },

@@ -1,5 +1,6 @@
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
+import { PageHeader } from "@/components/ui/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -23,7 +24,11 @@ const blogPosts: BlogPost[] = Array.from({ length: 12 }).map((_, index) => ({
 
 const page = () => {
   return (
-    <div>
+    <>
+      <PageHeader
+        title="Stratejimiz"
+        items={[{ title: "Stratejimiz", link: "/biz-kimiz/stratejimiz" }]}
+      />
       <PagesTitle
         title="How Can We Help You
         "
@@ -74,7 +79,7 @@ const page = () => {
           ))}
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 

@@ -8,8 +8,7 @@ interface BreadcrumbProps {
     link: string;
   }[];
 }
-
-export const BreadcrumbElement = ({ title, items = [] }: BreadcrumbProps) => {
+export const PageHeader = ({ title, items = [] }: BreadcrumbProps) => {
   return (
     <div className="w-full h-[400px] bg-black/30 pl-12 xl:pl-0">
       <div className="max-w-7xl mx-auto h-full">
@@ -24,7 +23,7 @@ export const BreadcrumbElement = ({ title, items = [] }: BreadcrumbProps) => {
             </Link>
             {items.map((item, index) => (
               <div key={index} className="flex items-center gap-2">
-                <MdOutlineKeyboardArrowRight className="mt-0.5"/>
+                <MdOutlineKeyboardArrowRight className="mt-0.5" />
                 <Link
                   href={item.link}
                   className="hover:text-secondary/50 transition duration-300"

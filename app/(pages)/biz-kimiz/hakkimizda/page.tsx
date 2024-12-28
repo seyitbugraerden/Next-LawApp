@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
-import Breadcrumb from "@/components/pages/BreadcrumbElement";
 import { PagesTitle } from "@/components/pages/PagesTitle";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 const page = () => {
   return (
     <>
-      <Breadcrumb
+      <PageHeader
         title="Hakkımızda"
         items={[{ title: "Hakkımızda", link: "/biz-kimiz/hakkimizda" }]}
       />

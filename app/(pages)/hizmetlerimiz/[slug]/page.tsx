@@ -1,13 +1,13 @@
-import BreadcrumbElement from "@/components/pages/BreadcrumbElement";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
+import { PageHeader } from "@/components/ui/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
 
 const page = () => {
   return (
     <>
-      <BreadcrumbElement
+      <PageHeader
         title="Stratejimiz"
         items={[{ title: "Stratejimiz", link: "/biz-kimiz/stratejimiz" }]}
       />
@@ -44,7 +44,9 @@ const page = () => {
       </Container>
       <Container>
         <div className="flex-1 flex flex-col gap-6 p-12 lg:p-24 shadow-2xl shadow-black/70 max-w-2xl mx-auto my-24">
-          <h2 className="text-white text-4xl bg-transparent">Bilgi ve Randevu İçin</h2>
+          <h2 className="text-white text-4xl bg-transparent">
+            Bilgi ve Randevu İçin
+          </h2>
           <div className="w-full h-[1px] bg-primary"></div>
           <input
             type="text"

@@ -1,11 +1,15 @@
 import { ContactForm } from "@/components/home/ContactForm";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 const page = () => {
   return (
     <>
-
+      <PageHeader
+        title="Stratejimiz"
+        items={[{ title: "Stratejimiz", link: "/biz-kimiz/stratejimiz" }]}
+      />
       <Container>
         <PagesTitle
           title="How Can We Help You
