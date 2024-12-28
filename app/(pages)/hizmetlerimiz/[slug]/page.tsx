@@ -43,8 +43,8 @@ const page = () => {
         </div>
       </Container>
       <Container>
-        <div className="flex-1 flex flex-col gap-6 p-12 px-4 lg:p-24 shadow-2xl shadow-black/70 max-w-2xl mx-auto my-24">
-          <h2 className="text-white text-4xl bg-transparent text-center lg:text-start">
+        <div className="flex-1 flex flex-col gap-6 p-12 px-4 lg:p-24 shadow-2xl shadow-black/70 max-w-2xl mx-auto my-12 mb-20 lg:my-24">
+          <h2 className="text-white text-2xl lg:text-4xl bg-transparent text-center lg:text-start">
             Bilgi ve Randevu
           </h2>
           <div className="w-full h-[1px] bg-primary"></div>
