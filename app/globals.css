@@ -27,16 +27,8 @@ section {
   @apply min-h-dvh overflow-x-hidden flex justify-center items-center;
 }
 .bg-try {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("@/public/assets/lake-house-boat-mountain-pass-reflection-1524749-wallhere.com.jpg");
-  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* Removed fixed attachment which can cause issues on iOS */
-  /* Changed background-size to cover for better mobile compatibility */
-  -webkit-background-size: cover; /* Added for older iOS versions */
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
