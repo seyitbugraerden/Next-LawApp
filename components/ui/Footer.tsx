@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import Link from "next/link";
+import NavData from "@/mock/navData.json";
 
 export const Footer = () => {
   return (
@@ -18,23 +19,27 @@ export const Footer = () => {
           <Image src="/logo.svg" alt="logo" width={240} height={60} />
         </div>
         <div className="lg:mx-auto">
-          <h2 className="text-2xl text-white font-semibold">Quick Links</h2>
+          <h2 className="text-2xl text-white font-semibold">Biz Kimiz?</h2>
           <ul className="text-white list-disc ms-4 mt-4">
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
+            {NavData[1].children.map((item, idx) => (
+              <li key={idx}>
+                <Link href={item.link} className="hover:text-secondary transition-colors">
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="lg:mx-auto">
-          <h2 className="text-2xl text-white font-semibold">Quick Links</h2>
+          <h2 className="text-2xl text-white font-semibold">Hizmetlerimiz</h2>
           <ul className="text-white list-disc ms-4 mt-4">
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
+            {NavData[2].children.map((item, idx) => (
+              <li key={idx}>
+                <Link href={item.link} className="hover:text-secondary transition-colors">
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div>

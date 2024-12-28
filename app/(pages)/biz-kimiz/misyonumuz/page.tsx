@@ -1,5 +1,6 @@
-import Breadcrumb from "@/components/pages/Breadcrumb";
 import Container from "@/components/ui/Container";
+import Breadcrumb from "@/components/pages/Breadcrumb";
+import { PagesTitle } from "@/components/pages/PagesTitle";
 
 const page = () => {
   return (
@@ -8,7 +9,13 @@ const page = () => {
         title="Misyonumuz"
         items={[{ title: "Misyonumuz", link: "/biz-kimiz/misyonumuz" }]}
       />
-      <Container className="text-white pt-12 pb-24">
+      <PagesTitle
+        title="How Can We Help You
+      "
+        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+      "
+      />
+      <Container className="text-white pb-24">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
         consequatur velit laborum commodi quo sit error dolorem obcaecati nemo
         sint ipsum animi nostrum optio, aliquid atque dolore quas facilis rerum

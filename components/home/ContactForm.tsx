@@ -31,7 +31,7 @@ export const ContactForm = () => {
                 <MdOutlineAttachEmail className="text-white size-12" />
               </div>
               <div className="text-white flex flex-col items-start gap-2">
-                <h2 className="text-2xl font-semibold">Emsil</h2>
+                <h2 className="text-2xl font-semibold">Email</h2>
                 <p className="text-sm">justuprodemo@gmail.com</p>
               </div>
             </div>

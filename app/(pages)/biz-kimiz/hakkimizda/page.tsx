@@ -1,6 +1,7 @@
-import Breadcrumb from "@/components/pages/Breadcrumb";
-import Container from "@/components/ui/Container";
 import Image from "next/image";
+import Container from "@/components/ui/Container";
+import Breadcrumb from "@/components/pages/Breadcrumb";
+import { PagesTitle } from "@/components/pages/PagesTitle";
 
 const page = () => {
   return (
@@ -8,6 +9,12 @@ const page = () => {
       <Breadcrumb
         title="Hakkımızda"
         items={[{ title: "Hakkımızda", link: "/biz-kimiz/hakkimizda" }]}
+      />
+      <PagesTitle
+        title="How Can We Help You
+      "
+        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+      "
       />
       <Container className="text-white pb-24">
         <div className="flex flex-row gap-4 py-12">

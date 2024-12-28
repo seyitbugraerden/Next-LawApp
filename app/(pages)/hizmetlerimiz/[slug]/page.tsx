@@ -1,4 +1,6 @@
 import { SwiperSection } from "@/components/home/SwiperSection";
+import Breadcrumb from "@/components/pages/Breadcrumb";
+import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +8,16 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
+      <Breadcrumb
+        title="Stratejimiz"
+        items={[{ title: "Stratejimiz", link: "/biz-kimiz/stratejimiz" }]}
+      />
+      <PagesTitle
+        title="How Can We Help You
+      "
+        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+      "
+      />
       <Container className="text-white my-12">
         <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-black/70">
           <p className="text-white p-12">
@@ -31,54 +43,45 @@ const page = () => {
           />
         </div>
       </Container>
-      <div>
-        <div>
-          <div className="p-4 md:p-8">
-            <h1 className="text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl">
-              Contact Me
-            </h1>
-            <form className="flex flex-col items-center">
-              <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
-                <div className="flex flex-col md:flex-row">
-                  <input
-                    id="name"
-                    type="text"
-                    className="my-2 py-2 px-4 rounded-md bg-black/30 text-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600"
-                    placeholder="Name"
-                  />
-                  <input
-                    id="email"
-                    type="email"
-                    className="my-2 py-2 px-4 rounded-md bg-black/30 text-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600"
-                    placeholder="Email"
-                  />
-                </div>
-                <input
-                  id="subject"
-                  type="text"
-                  placeholder="Subject"
-                  className="my-2 py-2 px-4 rounded-md bg-black/30 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600"
-                />
-                <textarea
-                  id="message"
-                  rows={5}
-                  placeholder="Say Something"
-                  className="my-2 py-2 px-4 rounded-md bg-black/30 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600"
-                />
-              </div>
-              <Link
-                href="/"
-                className="px-4 py-2 border border-secondary hover:bg-secondary text-white hover:text-primary"
-              >
-                Randevu Al
-              </Link>
-            </form>
+      <Container>
+        <div className="flex-1 flex flex-col gap-6 p-12 lg:p-24 shadow-2xl shadow-black/70 max-w-2xl mx-auto my-24">
+          <h2 className="text-white text-4xl bg-transparent">Bilgi ve Randevu İçin</h2>
+          <div className="w-full h-[1px] bg-primary"></div>
+          <input
+            type="text"
+            placeholder="Your Name*"
+            required
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
+          />
+          <input
+            type="email"
+            placeholder="Your Email*"
+            required
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
+          />
+          <input
+            type="tel"
+            placeholder="Phone*"
+            required
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
+          />
+          <select className="border border-white bg-transparent focus:outline-none focus:border-white p-3 text-white">
+            <option value="Subject*">Subject*</option>
+          </select>
+          <textarea
+            rows={5}
+            placeholder="Case Description"
+            className="border border-white bg-transparent focus:outline-none focus:border-white p-3 placeholder:text-white text-white"
+          />
+          <div className="bg-transparent flex justify-center mt-auto">
+            <Link
+              href="/"
+              className="px-6 py-2 border border-white bg-transparent text-white"
+            >
+              Randevu Al
+            </Link>
           </div>
         </div>
-      </div>
-      <Container>
-        {/* swiperperslide from 4 to 3 */}
-        <SwiperSection />
       </Container>
     </>
   );
