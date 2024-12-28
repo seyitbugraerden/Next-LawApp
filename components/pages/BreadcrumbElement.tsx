@@ -9,7 +9,7 @@ interface BreadcrumbProps {
   }[];
 }
 
-const BreadcrumbElement = ({ title, items = [] }: BreadcrumbProps) => {
+export const BreadcrumbElement = ({ title, items = [] }: BreadcrumbProps) => {
   return (
     <div className="w-full h-[400px] bg-black/30 pl-12 xl:pl-0">
       <div className="max-w-7xl mx-auto h-full">
@@ -39,5 +39,3 @@ const BreadcrumbElement = ({ title, items = [] }: BreadcrumbProps) => {
     </div>
   );
 };
-
-export default BreadcrumbElement;
