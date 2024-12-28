@@ -16,7 +16,7 @@ const page = () => {
         subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
       "
       />
-      <Container className="text-white pb-24">
+      <Container className="text-white lg:pb-24">
         <div className="flex flex-col lg:flex-row py-12 gap-12 lg:gap-4">
           <div className="flex-1 order-2 lg:order-1">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
