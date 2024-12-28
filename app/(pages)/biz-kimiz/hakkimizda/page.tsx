@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
-import Breadcrumb from "@/components/pages/Breadcrumb";
+import Breadcrumb from "@/components/pages/BreadcrumbElement";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 
 const page = () => {
@@ -17,8 +17,8 @@ const page = () => {
       "
       />
       <Container className="text-white pb-24">
-        <div className="flex flex-row gap-4 py-12">
-          <div className="flex-1">
+        <div className="flex flex-col lg:flex-row py-12 gap-24 lg:gap-4">
+          <div className="flex-1 order-2 lg:order-1">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
             minima obcaecati magnam delectus eligendi natus itaque dolores
             pariatur tempore aliquam tempora placeat labore est quasi similique
@@ -35,7 +35,7 @@ const page = () => {
             saepe illo ducimus doloremque natus inventore dolorem recusandae
             suscipit deleniti blanditiis. Recusandae.
           </div>
-          <div className="flex-1 relative overflow-hidden">
+          <div className="flex-1 order-1 lg:order-2 relative overflow-hidden">
             <Image
               src="https://wpocean.com/html/tf/avukat/assets/images/slider/1.png"
               alt="Hero Image"
@@ -44,12 +44,6 @@ const page = () => {
               className="ml-auto"
             />
             <div className="img__hero"></div>
-            <div className="absolute left-12 bottom-12 flex flex-row items-center gap-4">
-              <h2 className="text-[120px] text-secondary font-semibold">25</h2>
-              <h5 className="text-3xl text-white">
-                Years of <br /> Experience
-              </h5>
-            </div>
           </div>
         </div>
         {/* <ImageGalery /> */}

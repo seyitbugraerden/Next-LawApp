@@ -1,5 +1,5 @@
 import Container from "@/components/ui/Container";
-import Breadcrumb from "@/components/pages/Breadcrumb";
+import Breadcrumb from "@/components/pages/BreadcrumbElement";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 
 const page = () => {

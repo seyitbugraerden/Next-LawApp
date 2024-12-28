@@ -9,9 +9,9 @@ interface BreadcrumbProps {
   }[];
 }
 
-const Breadcrumb = ({ title, items = [] }: BreadcrumbProps) => {
+const BreadcrumbElement = ({ title, items = [] }: BreadcrumbProps) => {
   return (
-    <div className="w-full h-[400px] bg-black/30">
+    <div className="w-full h-[400px] bg-black/30 pl-12 xl:pl-0">
       <div className="max-w-7xl mx-auto h-full">
         <div className="flex flex-col justify-center items-start h-full">
           <h1 className="text-6xl text-white">{title}</h1>
@@ -40,4 +40,4 @@ const Breadcrumb = ({ title, items = [] }: BreadcrumbProps) => {
   );
 };
 
-export default Breadcrumb;
+export default BreadcrumbElement;

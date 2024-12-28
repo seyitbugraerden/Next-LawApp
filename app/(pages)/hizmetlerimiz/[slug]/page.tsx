@@ -1,5 +1,4 @@
-import { SwiperSection } from "@/components/home/SwiperSection";
-import Breadcrumb from "@/components/pages/Breadcrumb";
+import Breadcrumb from "@/components/pages/BreadcrumbElement";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
 import Image from "next/image";

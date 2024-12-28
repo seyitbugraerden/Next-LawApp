@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Container from "@/components/ui/Container";
-import Breadcrumb from "@/components/pages/Breadcrumb";
+import Breadcrumb from "@/components/pages/BreadcrumbElement";
 import { useState } from "react";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 
