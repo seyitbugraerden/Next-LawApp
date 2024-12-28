@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import React from "react";
 import CountUp from "react-countup";
 
 export const LogoCloud = () => {
   return (
-    <div className="bg-primary py-20 border-t border-b border-gray-800 bg-try">
-      <div className="container mx-auto px-6">
+    <div className="bg-primary py-20 border-t border-b border-gray-800 bg-try relative overflow-hidden">
+      <div className="container mx-auto px-6 z-50">
         <div className="flex flex-wrap -mx-3">
           <div className="w-full lg:w-1/2 px-3">
             <h2 className="text-white text-opacity-50 text-lg lg:text-3xl font-light lg:mb-4">

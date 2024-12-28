@@ -27,10 +27,11 @@ section {
   @apply min-h-dvh overflow-x-hidden flex justify-center items-center;
 }
 
+/* Background style for sections with parallax effect and dark overlay */
 .bg-try {
   background-image: url("https://picsum.photos/1920/1920");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 }
