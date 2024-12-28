@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary ">
+    <footer className="bg-primary border-t-4 border-t-secondary">
       <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
         <div>
           <Image src="/logo.svg" alt="logo" width={240} height={60} />
@@ -51,7 +51,7 @@ export const Footer = () => {
           </div>
         </div>
       </Container>
-      <Container className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center py-6 border-t border-white/70">
+      <Container className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center py-6 border-t border-secondary">
         <div className="text-sm text-white/70 font-light">
           <p>Copyright © 2024 Avukat. All rights reserved.</p>
         </div>

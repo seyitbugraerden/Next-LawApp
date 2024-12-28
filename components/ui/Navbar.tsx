@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Container from "./Container";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
   const NavData = [
@@ -14,10 +15,10 @@ export default function Navbar() {
       title: "Biz Kimiz?",
       link: "/biz-kimiz",
       children: [
-        { title: "Hakkimizda", link: "/hakkimizda" },
-        { title: "Misyonumuz", link: "/misyonumuz" },
-        { title: "Sertifikalarimiz", link: "/sertifikalarimiz" },
-        { title: "Referanslarimiz", link: "/referanslarimiz" },
+        { title: "Hakkimizda", link: "/biz-kimiz/hakkimizda" },
+        { title: "Misyonumuz", link: "/biz-kimiz/misyonumuz" },
+        { title: "Sertifikalarimiz", link: "/biz-kimiz/sertifikalarimiz" },
+        { title: "Referanslarimiz", link: "/biz-kimiz/referanslarimiz" },
       ],
     },
     {
@@ -94,7 +95,7 @@ export default function Navbar() {
             </div>
           ))}
         </div>
-        <div>
+        <div className="flex items-center gap-2">
           <Link
             href="/"
             className="px-4 py-2 border border-secondary hover:bg-secondary text-white hover:text-primary"
