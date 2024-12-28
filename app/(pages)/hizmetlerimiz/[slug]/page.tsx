@@ -86,7 +86,7 @@ const page = () => {
           </select>
           <textarea
             rows={5}
-            placeholder="Konu Açıklaması"
+            placeholder="Açıklama"
             className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white/30 text-white"
           />
           <div className="bg-transparent flex justify-center mt-auto">

@@ -26,8 +26,8 @@ const page = () => {
   return (
     <>
       <PageHeader
-        title="Stratejimiz"
-        items={[{ title: "Stratejimiz", link: "/biz-kimiz/stratejimiz" }]}
+        title="Hukuki Blog"
+        items={[{ title: "Hukuki Blog", link: "/hukuki-blog" }]}
       />
       <PagesTitle
         title="How Can We Help You
@@ -35,7 +35,7 @@ const page = () => {
         subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
         "
       />
-      <Container className="text-white pb-6">
+      <Container className="text-white pt-6 pb-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid atque
         blanditiis eaque recusandae esse libero amet quasi aliquam, asperiores
         error modi qui dicta distinctio laudantium.
