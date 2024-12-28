@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/pages/BreadcrumbElement";
+import BreadcrumbElement from "@/components/pages/BreadcrumbElement";
 import { PagesTitle } from "@/components/pages/PagesTitle";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
-      <Breadcrumb
+      <BreadcrumbElement
         title="Stratejimiz"
         items={[{ title: "Stratejimiz", link: "/biz-kimiz/stratejimiz" }]}
       />
