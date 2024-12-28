@@ -5,11 +5,62 @@ import Container from "./Container";
 
 export default function Navbar() {
   const NavData = [
-    { title: "Home", link: "/" },
-    { title: "About", link: "/about" },
-    { title: "Services", link: "/services" },
-    { title: "Blog", link: "/blog" },
-    { title: "Contact", link: "/contact" },
+    {
+      title: "Ana Sayfa",
+      link: "/",
+      children: [],
+    },
+    {
+      title: "Biz Kimiz?",
+      link: "/biz-kimiz",
+      children: [
+        { title: "Hakkimizda", link: "/hakkimizda" },
+        { title: "Misyonumuz", link: "/misyonumuz" },
+        { title: "Sertifikalarimiz", link: "/sertifikalarimiz" },
+        { title: "Referanslarimiz", link: "/referanslarimiz" },
+      ],
+    },
+    {
+      title: "Hizmetlerimiz",
+      link: "/hizmetlerimiz",
+      children: [
+        {
+          title: "Şirketler Hukuku Danışmanlığı",
+          link: "/hizmetlerimiz/sirketler-hukuku",
+        },
+        {
+          title: "Aile Hukuku Danışmanlığı",
+          link: "/hizmetlerimiz/aile-hukuku",
+        },
+        {
+          title: "Sözleşme Hukuku Danışmanlığı",
+          link: "/hizmetlerimiz/sozlesme-hukuku",
+        },
+        {
+          title: "Fikri ve Sınai Haklar Hukuku",
+          link: "/hizmetlerimiz/fikri-sinai-haklar",
+        },
+        {
+          title: "Gayrimenkul Hukuku Danışmanlığı",
+          link: "/hizmetlerimiz/gayrimenkul-hukuku",
+        },
+        {
+          title: "İş ve Sosyal Güvenlik Hukuku",
+          link: "/hizmetlerimiz/is-sosyal-guvenlik-hukuku",
+        },
+      ],
+    },
+
+    {
+      title: "Hukuki Blog",
+      link: "/hukuki-blog",
+      children: [],
+    },
+    {
+      title: "İletişim",
+      link: "/iletisim",
+      children: [],
+    },
   ];
 
   return (
@@ -19,14 +70,28 @@ export default function Navbar() {
           <Image src="/logo.svg" alt="Logo" height={130} width={130} />
         </div>
         <div className="py-8 hidden lg:block">
-          {NavData.map((x, idx) => (
-            <Link
-              key={idx}
-              href={x.link}
-              className="border-b-4 border-b-transparent hover:border-b-secondary hover:text-secondary py-8 px-4 text-white text-md font-medium uppercase"
-            >
-              {x.title}
-            </Link>
+          {NavData.map((item, idx) => (
+            <div key={idx} className="relative inline-block group">
+              <Link
+                href={item.link}
+                className="border-b-4 border-b-transparent hover:border-b-secondary hover:text-secondary py-8 px-4 text-white text-md font-medium"
+              >
+                {item.title}
+              </Link>
+              {item.children.length > 0 && (
+                <div className="absolute hidden group-hover:block bg-primary min-w-[200px] mt-4 border-l border-secondary">
+                  {item.children.map((child, childIdx) => (
+                    <Link
+                      key={childIdx}
+                      href={child.link}
+                      className="block px-4 py-2 text-white hover:bg-secondary hover:text-primary"
+                    >
+                      {child.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
         <div>
