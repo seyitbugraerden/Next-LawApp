@@ -28,7 +28,7 @@ const page = () => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="w-full mt-24 rounded-lg"
+          className="w-full mt-24 rounded-lg hidden"
         ></iframe>
       </Container>
     </>
