@@ -7,8 +7,8 @@ export const AboutUs = () => {
       <Container>
         <div className="flex flex-row justify-between items-end">
           <div className="flex flex-col gap-2 border-l-2 border-secondary ps-4">
-            <h2 className="text-xl text-secondary">Company</h2>
-            <h1 className="text-4xl text-white">About Us</h1>
+            <h2 className="text-lg lg:text-xl text-secondary">Company</h2>
+            <h1 className="text-2xl lg:text-4xl text-white">About Us</h1>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-start gap-24 lg:gap-36 text-white mt-12">
@@ -29,17 +29,17 @@ export const AboutUs = () => {
             />
           </div>
           <div className="flex-1 flex flex-col gap-6 order-1 lg:order-2">
-            <h2 className="text-3xl font-bold">
+            <h2 className="text-xl lg:text-3xl font-bold">
               We Are The Most Populer Law Firm That Can Help You Perfectly!
             </h2>
-            <p>
+            <p className="text-sm lg:text-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
               tincidunt nullam ridiculus at nec mattis consequat cursus et.
               Maecenas euismod quis et nunc dolor enim nisl. Turpis vel, laoreet
               at id massa id elementum feugiat molestie. Adipiscing turpis
               feugiat lectus posuere nulla ultrices vitae.
             </p>
-            <p>
+            <p className="text-sm lg:text-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
               tincidunt nullam ridiculus at nec mattis consequat cursus et.
               Maecenas euismod quis et nunc dolor enim nisl. Turpis vel, laoreet

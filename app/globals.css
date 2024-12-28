@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;scrollbar-width: thin; /* Firefox */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scrollbar-width: thin; /* Firefox */
   scrollbar-color: black #f1f1f1;
-  @apply bg-primary
+  @apply bg-primary;
 }
 
 .img__hero::before {
@@ -14,20 +15,22 @@ body {
   display: block;
   right: 0;
   top: 0;
-  @apply border-[20px] border-[#717171] h-full w-full lg:w-[80%] xl:w-[75%] -z-10 ;
+  @apply border-[20px] border-[#717171] h-full w-full lg:w-[80%] xl:w-[75%] -z-10;
 }
 .img__hero::after {
   position: absolute;
   content: "";
   display: block;
-  @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10 ;
+  @apply bg-primary h-64 w-36 -z-10 left-1/4  bottom-10;
 }
-section{
-  @apply min-h-dvh overflow-x-hidden flex justify-center items-center
+section {
+  @apply min-h-dvh overflow-x-hidden flex justify-center items-center;
 }
-.bg-try{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/1920/1920");
+.bg-try {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://picsum.photos/1920/1920");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100%;
 }

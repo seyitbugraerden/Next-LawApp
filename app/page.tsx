@@ -13,7 +13,9 @@ export default function Home() {
       <LogoCloud />
       <SwiperSection />
       <BlogTriple />
-      <ContactForm />
+      <div className="mb-12">
+        <ContactForm />
+      </div>
     </>
   );
 }

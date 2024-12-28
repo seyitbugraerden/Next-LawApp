@@ -12,7 +12,7 @@ export const BlogTriple = () => {
             <h2 className="text-xl text-secondary">Blog</h2>
             <h1 className="text-4xl text-white">Latest New Update</h1>
           </div>
-          <div>
+          <div className="hidden lg:block">
             <Link href="/" className="text-secondary hover:opacity-80">
               Blog Sayfası
               <MdArrowRightAlt className="inline-block size-6 ms-1" />

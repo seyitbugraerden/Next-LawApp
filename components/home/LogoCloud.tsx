@@ -8,11 +8,11 @@ export const LogoCloud = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap -mx-3">
           <div className="w-full lg:w-1/2 px-3">
-            <h2 className="text-white text-opacity-50 text-4xl font-light mb-4">
+            <h2 className="text-white text-opacity-50 text-lg lg:text-3xl font-light lg:mb-4">
               We always evaluate our skills
             </h2>
             <h1
-              className="text-white text-5xl font-bold"
+              className="text-white text-2xl lg:text-4xl font-bold"
               data-aos="fade-zoom-in"
               data-aos-delay="200"
             >
