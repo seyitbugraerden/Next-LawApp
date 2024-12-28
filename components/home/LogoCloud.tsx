@@ -8,7 +8,7 @@ export const LogoCloud = () => {
       className="py-20 border-t border-b border-gray-800 bg-try relative !overflow-hidden"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('@/public/assets/lake-house-boat-mountain-pass-reflection-1524749-wallhere.com.jpg')",
+          "url('@/public/assets/lake-house-boat-mountain-pass-reflection-1524749-wallhere.com.jpg')",
       }}
     >
       <div className="container mx-auto px-6 z-50">
