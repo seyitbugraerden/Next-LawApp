@@ -7,8 +7,8 @@ const page = () => {
   return (
     <>
       <PageHeader
-        title="Stratejimiz"
-        items={[{ title: "Stratejimiz", link: "/biz-kimiz/stratejimiz" }]}
+        title="İletişim"
+        items={[{ title: "İletişim", link: "/iletisim" }]}
       />
       <Container>
         <PagesTitle
