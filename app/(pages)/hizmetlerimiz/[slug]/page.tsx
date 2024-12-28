@@ -52,21 +52,21 @@ const page = () => {
             type="text"
             placeholder="Adınız"
             required
-            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white text-white"
+            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white/30 text-white"
           />
           <input
             type="email"
             placeholder="E-Posta Adresiniz"
             required
-            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white text-white"
+            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white/30 text-white"
           />
           <input
             type="tel"
             placeholder="Telefon Numaranız"
             required
-            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white text-white"
+            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white/30 text-white"
           />
-          <select className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 text-white">
+          <select className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 text-white/30">
             <option className="bg-primary" value="Konu*">Konu</option>
             <option className="bg-primary" value="Şirketler Hukuku Danışmanlığı">
               Şirketler Hukuku Danışmanlığı
@@ -87,7 +87,7 @@ const page = () => {
           <textarea
             rows={5}
             placeholder="Konu Açıklaması"
-            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white text-white"
+            className="border border-white/50 bg-transparent focus:outline-none focus:border-white/50 p-3 placeholder:text-white/30 text-white"
           />
           <div className="bg-transparent flex justify-center mt-auto">
             <Link
