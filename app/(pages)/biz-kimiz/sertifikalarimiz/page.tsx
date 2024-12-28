@@ -51,7 +51,7 @@ const Page = () => {
         subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
       "
       />
-      <Container className="pb-12">
+      <Container className="pb-12 pt-6 lg:pt-0">
         <p className="text-white pb-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
           exercitationem id ad voluptatibus culpa dolore quas, saepe
