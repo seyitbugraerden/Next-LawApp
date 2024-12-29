@@ -27,9 +27,16 @@ section {
   @apply min-h-dvh overflow-x-hidden flex justify-center items-center;
 }
 .bg-try {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("@/public/assets/lake-house-boat-mountain-pass-reflection-1524749-wallhere.com.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("@/public/assets/lake-house-boat-mountain-pass-reflection-1524749-wallhere.com.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.__services .swiper-pagination-bullet {
+  @apply bg-secondary translate-y-3 rounded-none transition-all duration-300 hover:bg-secondary;
+}
+.__services .swiper-pagination-bullet-active {
+  @apply rounded-full;
 }
