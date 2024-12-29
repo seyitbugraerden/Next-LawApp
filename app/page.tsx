@@ -4,6 +4,7 @@ import { BlogTriple } from "@/components/home/BlogTriple";
 import { ContactForm } from "@/components/home/ContactForm";
 import { LogoCloud } from "@/components/home/LogoCloud";
 import { SwiperSection } from "@/components/home/SwiperSection";
+import SwiperDemoBlog from "@/components/ui/SwiperDemoBlog";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <AboutUs />
       <LogoCloud />
       <SwiperSection />
-      <BlogTriple />
+      <SwiperDemoBlog />
       <div className="mb-12">
         <ContactForm />
       </div>
