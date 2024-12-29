@@ -28,7 +28,7 @@ section {
 }
 .bg-try {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("@/public/assets/lake-house-boat-mountain-pass-reflection-1524749-wallhere.com.jpg");
+    url("/public/assets/lake-house-boat-mountain-pass-reflection-1524749-wallhere.com.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
