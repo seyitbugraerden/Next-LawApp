@@ -23,7 +23,7 @@ export const Footer = () => {
           <ul className="text-white list-disc ms-4 mt-4">
             {NavData[1].children.map((item, idx) => (
               <li key={idx}>
-                <Link href={item.link} className="hover:text-secondary transition-colors text-sm lg:text-lg">
+                <Link href={item.link} className="hover:text-secondary transition-colors text-sm lg:text-md">
                   {item.title}
                 </Link>
               </li>
@@ -35,7 +35,7 @@ export const Footer = () => {
           <ul className="text-white list-disc ms-4 mt-4">
             {NavData[2].children.map((item, idx) => (
               <li key={idx}>
-                <Link href={item.link} className="hover:text-secondary transition-colors text-sm text-lg">
+                <Link href={item.link} className="hover:text-secondary transition-colors text-sm lg:text-md">
                   {item.title}
                 </Link>
               </li>
