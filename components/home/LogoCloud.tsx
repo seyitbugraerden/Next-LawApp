@@ -9,14 +9,14 @@ export const LogoCloud = () => {
         <div className="flex flex-wrap -mx-3">
           <div className="w-full lg:w-1/2 px-3">
             <h2 className="text-white text-opacity-50 text-lg lg:text-3xl font-light lg:mb-4">
-              We always evaluate our skills
+              Her Gün Daha İleriye
             </h2>
             <h1
               className="text-white text-2xl lg:text-4xl font-bold"
               data-aos="fade-zoom-in"
               data-aos-delay="200"
             >
-              through our performance
+              Sürekli Gelişim, Kesintisiz Başarı
             </h1>
           </div>
           <div className="w-full lg:w-1/2 px-3 mt-12 lg:mt-0">
@@ -27,40 +27,39 @@ export const LogoCloud = () => {
                   <span className="odometer">
                     <CountUp end={469} enableScrollSpy={true} />
                   </span>
-                  k
+                  +
                 </span>
-                <p className="text-white font-light">New accounts</p>
+                <p className="text-white font-light">Çözülmüş Dava Sayısı</p>
               </div>
 
               <div className="text-center">
                 <span className="text-4xl font-extrabold text-white">
-                  +
                   <span className="odometer">
                     <CountUp end={92} enableScrollSpy={true} />
                   </span>
+                  +
                 </span>
-                <p className="text-white font-light">Finished projects</p>
+                <p className="text-white font-light">Mutlu Müvekkil Sayısı</p>
               </div>
 
               <div className="text-center">
                 <span className="text-4xl font-extrabold text-white">
-                  +
                   <span className="odometer">
-                    <CountUp end={756} enableScrollSpy={true} />
+                    <CountUp end={10} enableScrollSpy={true} />
                   </span>
+                  +
                 </span>
-                <p className="text-white font-light">Skilled experts</p>
+                <p className="text-white font-light">Yıllık Tecrübe</p>
               </div>
 
               <div className="text-center">
                 <span className="text-4xl font-extrabold text-white">
-                  +
+                  %
                   <span className="odometer">
-                    <CountUp end={25} enableScrollSpy={true} />
+                    <CountUp end={100} enableScrollSpy={true} />
                   </span>
-                  k
                 </span>
-                <p className="text-white font-light">Media posts</p>
+                <p className="text-white font-light">Başarı Oranı</p>
               </div>
             </div>
           </div>
