@@ -6,22 +6,23 @@ export const Hero = () => {
   return (
     <section className="h-full">
       <Container className="flex flex-col lg:flex-row items-center gap-4 py-4 lg:min-h-[90dvh] lg:mt-0">
-        <div className="flex-1 flex flex-col gap-5 lg:gap-8 order-2 lg:order-1 text-center lg:text-left mt-24 lg:mt-0">
+        <div className="flex-1 flex flex-col gap-5 lg:gap-0 order-2 lg:order-1 text-center lg:text-left mt-24 lg:mt-0">
           <h2 className="text-xl lg:text-4xl text-secondary font-semibold">
-            Best Lawer Egency
+            Arda Gürhan
           </h2>
           <h1 className="text-2xl lg:text-2xl lg:text-[60px] text-white lg:leading-[60px]">
-            Creative solutions for legal problems
+            Hukuki Çözümler, Güvenilir Sonuçlar.
           </h1>
-          <p className="text-white text-sm lg:text-md mb-3 lg:mb-0">
-            Bibendum commodo nulla id amet magna sit malesada. Et sceleque
-            scelerisque mauris malesuada dui. Tortor, sit nulla odio enim neque.
-            Enim erat augue id massa ultrices ut orci.
+          <p className="text-white text-sm lg:text-md mb-3 lg:mb-0 pt-6 mb-6">
+            Hukuki süreçler karmaşık ve hassas olabilir, ancak doğru rehberlikle
+            her sorun çözüme kavuşur. Uzman ekibimiz, her bir davayı titizlikle
+            analiz ederek, müvekkillerimize en etkili ve sürdürülebilir hukuki
+            çözümleri sunar.
           </p>
-          <div>
+          <div className="mt-12">
             <Link
-              href="/"
-              className="px-8 py-2 border border-secondary bg-secondary text-primary hover:bg-primary hover:text-secondary hover:border-secondary"
+              href="/iletisim"
+              className="px-8 py-2 border transition duration-300 border-secondary bg-secondary text-primary hover:bg-primary hover:text-secondary hover:border-secondary"
             >
               Randevu Al
             </Link>

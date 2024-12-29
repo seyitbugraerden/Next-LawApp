@@ -9,12 +9,12 @@ export const ContactForm = () => {
     <section className="mt-12 lg:py-24 bg-tertiary overflow-y-hidden">
       <Container className="flex flex-col lg:flex-row lg:px-24 bg-transparent">
         <div className="flex-1 flex flex-col gap-6 p-4 pb-12 lg:p-24">
-          <h2 className="text-white text-xl lg:text-4xl bg-transparent">Contact Info</h2>
+          <h2 className="text-white text-xl lg:text-4xl bg-transparent">
+            İletişim Adresi
+          </h2>
           <div className="w-full h-[1px] bg-secondary"></div>
           <p className="text-white text-sm lg:text-lg bg-transparent">
-            Amet turpis urna malesuada sed augue ut. Orci neque elit massa
-            semper turpis vel. Enim tortor at hac quis odio. Quam nulla gravida
-            sit gravida vitae fermentum parturient.
+            Hukuki ihtiyaçlarınız için her zaman yanınızdayız.
           </p>
           <div className="flex flex-col items-start gap-6">
             <div className="flex flex-row items-center gap-4">
@@ -22,8 +22,12 @@ export const ContactForm = () => {
                 <IoHomeOutline className="text-white size-8 lg:size-12" />
               </div>
               <div className="text-white flex flex-col items-start gap-2">
-                <h2 className="font-semibold text-sm lg:text-2xl">Office Address</h2>
-                <p className="text-xs lg:text-sm">244 Royal Ln. Mesa, New Jersey</p>
+                <h2 className="font-semibold text-sm lg:text-2xl">
+                  Adres
+                </h2>
+                <p className="text-xs lg:text-sm">
+                  244 Royal Ln. Mesa, New Jersey
+                </p>
               </div>
             </div>
             <div className="flex flex-row items-center gap-4">
@@ -31,7 +35,7 @@ export const ContactForm = () => {
                 <MdOutlineAttachEmail className="text-white size-8 lg:size-12" />
               </div>
               <div className="text-white flex flex-col items-start gap-2">
-                <h2 className="font-semibold text-sm lg:text-2xl">Email</h2>
+                <h2 className="font-semibold text-sm lg:text-2xl">E-Posta</h2>
                 <p className="text-xs lg:text-sm">justuprodemo@gmail.com</p>
               </div>
             </div>
@@ -40,7 +44,7 @@ export const ContactForm = () => {
                 <MdOutlineLocalPhone className="text-white size-8 lg:size-12" />
               </div>
               <div className="text-white flex flex-col items-start gap-2">
-                <h2 className="text-sm lg:text-2xl font-semibold">Phone</h2>
+                <h2 className="text-sm lg:text-2xl font-semibold">Telefon</h2>
                 <p className="text-xs lg:text-sm">(684) 555-0102</p>
               </div>
             </div>
@@ -49,14 +53,18 @@ export const ContactForm = () => {
                 <TbClockHour4 className="text-white size-8 lg:size-12" />
               </div>
               <div className="text-white flex flex-col items-start gap-2">
-                <h2 className="text-sm lg:text-2xl font-semibold">Office Hour</h2>
+                <h2 className="text-sm lg:text-2xl font-semibold">
+                  Çalışma Saatleri
+                </h2>
                 <p className="text-xs lg:text-sm">Mon-Sun: 10am – 7pm</p>
               </div>
             </div>
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-6 p-4 lg:p-24 bg-secondary shadow-2xl shadow-black/70">
-          <h2 className="text-white text-xl lg:text-4xl bg-transparent">Contact Us</h2>
+          <h2 className="text-white text-xl lg:text-4xl bg-transparent">
+            İletişim Formu
+          </h2>
           <div className="w-full h-[1px] bg-primary"></div>
           <input
             type="text"
@@ -77,17 +85,31 @@ export const ContactForm = () => {
             className="border border-white/30 bg-transparent text-xs lg:text-sm focus:outline-none focus:border-white/30 p-3 placeholder:text-white/30 text-white"
           />
           <select className="border border-white/30 bg-transparent text-xs lg:text-sm focus:outline-none focus:border-white/30 p-3 text-white/30">
-          <option className="bg-primary" value="Konu*">Konu</option>
-            <option className="bg-primary" value="Şirketler Hukuku Danışmanlığı">
+            <option className="bg-primary" value="Konu*">
+              Konu
+            </option>
+            <option
+              className="bg-primary"
+              value="Şirketler Hukuku Danışmanlığı"
+            >
               Şirketler Hukuku Danışmanlığı
             </option>
-            <option className="bg-primary" value="Sözleşme Hukuku Danışmanlığı*">
+            <option
+              className="bg-primary"
+              value="Sözleşme Hukuku Danışmanlığı*"
+            >
               Sözleşme Hukuku Danışmanlığı
             </option>
-            <option className="bg-primary" value="Fikri ve Sınai Haklar Hukuku*">
+            <option
+              className="bg-primary"
+              value="Fikri ve Sınai Haklar Hukuku*"
+            >
               Fikri ve Sınai Haklar Hukuku
             </option>
-            <option className="bg-primary" value="Gayrimenkul Hukuku Danışmanlığı">
+            <option
+              className="bg-primary"
+              value="Gayrimenkul Hukuku Danışmanlığı"
+            >
               Gayrimenkul Hukuku Danışmanlığı
             </option>
             <option className="bg-primary" value="İş ve Sosyal Güvenlik Hukuku">

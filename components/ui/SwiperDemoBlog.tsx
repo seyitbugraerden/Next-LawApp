@@ -16,11 +16,11 @@ export default function SwiperDemoBlog() {
     <Container className="pb-24">
       <div className="flex flex-row justify-between items-end mb-12">
         <div className="flex flex-col w-full gap-2 border-l-2 border-secondary ps-4">
-          <h2 className="text-xl text-secondary">Blog</h2>
+          <h2 className="text-xl text-secondary">Hukuki Blog</h2>
           <div className="flex justify-between items-center w-full">
-            <h1 className="text-4xl text-white">Blog Yazıları</h1>
+            <h1 className="text-4xl text-white">Başlıca Blog Yazıları</h1>
             <Link href="/" className="text-secondary hover:opacity-80">
-              Blog Sayfası
+              Hukuki Blog Sayfası
               <MdArrowRightAlt className="inline-block size-6 ms-1" />
             </Link>
           </div>

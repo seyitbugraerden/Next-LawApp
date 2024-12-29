@@ -7,8 +7,8 @@ export const AboutUs = () => {
       <Container>
         <div className="flex flex-row justify-between items-end">
           <div className="flex flex-col gap-2 border-l-2 border-secondary ps-4">
-            <h2 className="text-lg lg:text-xl text-secondary">Company</h2>
-            <h1 className="text-2xl lg:text-4xl text-white">About Us</h1>
+            <h2 className="text-lg lg:text-xl text-secondary">Biz Kimiz?</h2>
+            <h1 className="text-2xl lg:text-4xl text-white">Hakkımızda</h1>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-start gap-24 lg:gap-36 text-white mt-12">
@@ -29,22 +29,28 @@ export const AboutUs = () => {
             />
           </div>
           <div className="flex-1 flex flex-col gap-6 order-1 lg:order-2">
-            <h2 className="text-xl lg:text-3xl font-bold">
-              We Are The Most Populer Law Firm That Can Help You Perfectly!
+            <h2 className="text-xl lg:text-3xl font-bold text-secondary">
+              Güvenilir Hukuki Danışmanlık, Etkin Çözümler
             </h2>
             <p className="text-sm lg:text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
-              tincidunt nullam ridiculus at nec mattis consequat cursus et.
-              Maecenas euismod quis et nunc dolor enim nisl. Turpis vel, laoreet
-              at id massa id elementum feugiat molestie. Adipiscing turpis
-              feugiat lectus posuere nulla ultrices vitae.
+              Hukuki sorunlar, hayatın karmaşık anlarında güvenilir bir
+              rehberlik gerektirir. Biz, hukukun her alanında uzmanlaşmış
+              ekibimizle bireysel ve kurumsal müvekkillerimize etkin, hızlı ve
+              güvenilir çözümler sunmak için buradayız. Adalet, şeffaflık ve
+              etik değerleri ilke edinerek, her davaya özel bir yaklaşım
+              benimsiyor ve müvekkillerimizin haklarını en güçlü şekilde
+              savunuyoruz.
             </p>
             <p className="text-sm lg:text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
-              tincidunt nullam ridiculus at nec mattis consequat cursus et.
-              Maecenas euismod quis et nunc dolor enim nisl. Turpis vel, laoreet
-              at id massa id elementum feugiat molestie. Adipiscing turpis
-              feugiat lectus posuere nulla ultrices vitae.
+              Deneyim ve bilgi birikimimizi, müvekkillerimizin ihtiyaçlarına
+              özel stratejiler geliştirerek birleştiriyor, hukuki süreçlerin her
+              aşamasında yanlarında oluyoruz. İster bireysel haklarınızı
+              korumak, ister kurumsal ihtiyaçlarınıza uygun hukuki çözümler
+              üretmek olsun, her durumda sizinle birlikte hareket ediyoruz.
+            </p>
+            <p className="text-sm lg:text-md">
+              Bizimle adalet yolculuğunuzda emin adımlarla ilerleyin. Çünkü
+              doğru strateji ve güvenilir rehberlikle her sorun, çözüme ulaşır.
             </p>
           </div>
         </div>
