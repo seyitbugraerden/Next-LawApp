@@ -10,9 +10,9 @@ const page = () => {
         items={[{ title: "Misyonumuz", link: "/biz-kimiz/misyonumuz" }]}
       />
       <PagesTitle
-        title="How Can We Help You
+        title="Adalet ve Güven
       "
-        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+        subTitle="Yasal Haklarınızı Güvence Altına Alıyoruz
       "
       />
       <Container className="text-white pb-12 pt-6 lg:pt-0">

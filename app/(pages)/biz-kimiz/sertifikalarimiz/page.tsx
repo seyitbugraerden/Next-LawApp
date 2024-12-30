@@ -46,9 +46,9 @@ const Page = () => {
         ]}
       />
       <PagesTitle
-        title="How Can We Help You
+        title="Yetki ve Uzmanlıklar
       "
-        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+        subTitle="Profesyonellik ve Güvenin Kanıtı
       "
       />
       <Container className="pb-12 pt-6 lg:pt-0">

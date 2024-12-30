@@ -11,9 +11,9 @@ const page = () => {
         items={[{ title: "Hakkımızda", link: "/biz-kimiz/hakkimizda" }]}
       />
       <PagesTitle
-        title="How Can We Help You
+        title="Yasal Destek ve Danışmanlık
       "
-        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+        subTitle="İhtiyaçlarınıza Özel Çözümlerle Hukuki Yardım
       "
       />
       <Container className="text-white lg:pb-24">
