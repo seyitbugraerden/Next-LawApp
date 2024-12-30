@@ -11,6 +11,8 @@ import Link from "next/link";
 import Container from "./Container";
 import { MdArrowRightAlt } from "react-icons/md";
 
+import blog from "@/mock/blog.json";
+
 export default function SwiperDemoBlog() {
   return (
     <Container className="pb-24">
@@ -42,7 +44,7 @@ export default function SwiperDemoBlog() {
           },
         }}
       >
-        {Array.from({ length: 5 }).map((_, index) => (
+        {blog.map((blog, index) => (
           <SwiperSlide key={index} className="relative p-4">
             <Link
               href="#"
@@ -65,14 +67,10 @@ export default function SwiperDemoBlog() {
                   className="mt-4 text-2xl font-semibold line-clamp-1 group-hover:text-secondary"
                   title="Lorem ipsum dolor sit amet elit."
                 >
-                  Lorem ipsum dolor sit amet elit.
+                  {blog.title}
                 </h2>
                 <p className="font-thin mt-4 line-clamp-3 h-18">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Iure, tempora est suscipit accusamus autem, nam accusantium
-                  temporibus libero, officia aliquid quibusdam soluta
-                  necessitatibus facere. Accusamus debitis tempora repudiandae
-                  dolores porro at quaerat sapiente excepturi molestias atque!
+                  {blog.content}
                 </p>
                 <div className="mt-6 flex flex-row items-center gap-2">
                   <div className="h-[1px] w-6 bg-secondary"></div>

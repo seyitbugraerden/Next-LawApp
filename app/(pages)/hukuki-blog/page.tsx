@@ -4,23 +4,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-interface BlogPost {
-  id: number;
-  title: string;
-  content: string;
-  date: string;
-  imageUrl: string;
-}
-
-const blogPosts: BlogPost[] = Array.from({ length: 12 }).map((_, index) => ({
-  id: index,
-  title: "Lorem ipsum dolor sit amet elit.",
-  content:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, tempora est suscipit accusamus autem, nam accusantium temporibus libero, officia aliquid quibusdam soluta necessitatibus facere. Accusamus debitis tempora repudiandae dolores porro at quaerat sapiente excepturi molestias atque!",
-  date: "12.07.1997",
-  imageUrl: "https://picsum.photos/480/300",
-}));
+import blog from "@/mock/blog.json";
 
 const page = () => {
   return (
@@ -30,26 +14,29 @@ const page = () => {
         items={[{ title: "Hukuki Blog", link: "/hukuki-blog" }]}
       />
       <PagesTitle
-        title="How Can We Help You
+        title="Hukuki Rehber
         "
-        subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
+        subTitle="Yasal Haklar ve Çözümler
         "
       />
       <Container className="text-white pt-6 pb-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid atque
-        blanditiis eaque recusandae esse libero amet quasi aliquam, asperiores
-        error modi qui dicta distinctio laudantium.
+        Hukuki Rehber, farklı alanlardaki yasal haklarınızı anlamanızı sağlayan
+        kapsamlı bir kaynaktır. Boşanma, işçi hakları, tüketici hakları gibi
+        önemli konularda uzman görüşleri ve pratik bilgiler sunarak, hukuki
+        süreçlerde doğru adımlar atmanıza yardımcı olur. Amacımız, karmaşık
+        hukuki terimleri ve prosedürleri sadeleştirerek, her bireyin haklarını
+        daha iyi savunabilmesini sağlamaktır.
       </Container>
       <Container>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 py-12 gap-12 ">
-          {blogPosts.map((post) => (
+          {blog.map((post, idx) => (
             <Link
-              href="#"
-              key={post.id}
+              href={`/hukuki-blog/${post.friendlyUrl}`}
+              key={idx}
               className="bg-white rounded-2xl shadow-2xl transition duration-300 relative group"
             >
               <Image
-                src={post.imageUrl}
+                src="https://picsum.photos/480/300"
                 alt={`${post.title} thumbnail`}
                 width={480}
                 height={300}

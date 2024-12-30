@@ -1,53 +1,53 @@
 [
-    {
-      "title": "Ana Sayfa",
-      "link": "/",
-      "children": []
-    },
-    {
-      "title": "Biz Kimiz?", 
-      "link": "/biz-kimiz",
-      "children": [
-        { "title": "Hakkimizda", "link": "/biz-kimiz/hakkimizda" },
-        { "title": "Misyonumuz", "link": "/biz-kimiz/misyonumuz" },
-        { "title": "Stratejimiz", "link": "/biz-kimiz/stratejimiz" },
-        { "title": "Sertifikalarimiz", "link": "/biz-kimiz/sertifikalarimiz" }
-      ]
-    },
-    {
-      "title": "Hizmetlerimiz",
-      "link": "/hizmetlerimiz", 
-      "children": [
-        {
-          "title": "Şirketler Hukuku Danışmanlığı",
-          "link": "/hizmetlerimiz/sirketler-hukuku"
-        },
-        {
-          "title": "Sözleşme Hukuku Danışmanlığı",
-          "link": "/hizmetlerimiz/sozlesme-hukuku"
-        },
-        {
-          "title": "Fikri ve Sınai Haklar Hukuku",
-          "link": "/hizmetlerimiz/fikri-sinai-haklar"
-        },
-        {
-          "title": "Gayrimenkul Hukuku Danışmanlığı",
-          "link": "/hizmetlerimiz/gayrimenkul-hukuku"
-        },
-        {
-          "title": "İş ve Sosyal Güvenlik Hukuku",
-          "link": "/hizmetlerimiz/is-sosyal-guvenlik-hukuku"
-        }
-      ]
-    },
-    {
-      "title": "Hukuki Blog",
-      "link": "/hukuki-blog",
-      "children": []
-    },
-    {
-      "title": "İletişim",
-      "link": "/iletisim",
-      "children": []
-    }
+  {
+    "title": "Ana Sayfa",
+    "link": "/",
+    "children": []
+  },
+  {
+    "title": "Biz Kimiz?",
+    "link": "#",
+    "children": [
+      { "title": "Hakkimizda", "link": "/biz-kimiz/hakkimizda" },
+      { "title": "Misyonumuz", "link": "/biz-kimiz/misyonumuz" },
+      { "title": "Stratejimiz", "link": "/biz-kimiz/stratejimiz" },
+      { "title": "Sertifikalarimiz", "link": "/biz-kimiz/sertifikalarimiz" }
+    ]
+  },
+  {
+    "title": "Hizmetlerimiz",
+    "link": "/hizmetlerimiz",
+    "children": [
+      {
+        "title": "Şirketler Hukuku Danışmanlığı",
+        "link": "/hizmetlerimiz/sirketler-hukuku"
+      },
+      {
+        "title": "Sözleşme Hukuku Danışmanlığı",
+        "link": "/hizmetlerimiz/sozlesme-hukuku"
+      },
+      {
+        "title": "Fikri ve Sınai Haklar Hukuku",
+        "link": "/hizmetlerimiz/fikri-sinai-haklar"
+      },
+      {
+        "title": "Gayrimenkul Hukuku Danışmanlığı",
+        "link": "/hizmetlerimiz/gayrimenkul-hukuku"
+      },
+      {
+        "title": "İş ve Sosyal Güvenlik Hukuku",
+        "link": "/hizmetlerimiz/is-sosyal-guvenlik-hukuku"
+      }
+    ]
+  },
+  {
+    "title": "Hukuki Blog",
+    "link": "/hukuki-blog",
+    "children": []
+  },
+  {
+    "title": "İletişim",
+    "link": "/iletisim",
+    "children": []
+  }
 ]

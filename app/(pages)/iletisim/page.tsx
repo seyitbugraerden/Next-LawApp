@@ -12,7 +12,7 @@ const page = () => {
       />
       <Container>
         <PagesTitle
-          title="How Can We Help You
+          title="Bizimle İletişime Geçin
       "
           subTitle="Sorularınız ve hukuki ihtiyaçlarınız için buradayız.
       "
